@@ -1,19 +1,22 @@
-/* Mobile-first styles — palette allineata a PLM Impianti (verde #008c00, grigi chiari) */
+/* Mobile-first styles — palette allineata al logo (rosso + nero) */
 :root{
   --bg:#ffffff;
   --card:#ffffff;
-  --text:#292929;
-  --muted:#727272;
-  --brand:#008c00;
-  --brand2:#4e8221;
-  --brand-light:#61a229;
-  --ring: rgba(0,140,0,.35);
+  --text:#151515;
+  --muted:#616161;
+  --brand:#e10600;
+  --brand2:#b10000;
+  --brand-light:#ff3b30;
+  --link-underline:#e10600;
+  --link-underline-hover:#b10000;
+  --brand-rgb: 225, 6, 0;
+  --ring: rgba(var(--brand-rgb), .32);
   --border: rgba(0,0,0,.12);
   --fill-soft: rgba(0,0,0,.04);
   --fill-softer: rgba(0,0,0,.065);
-  --icon-box-bg:#e9ece9;
+  --icon-box-bg:#f2f2f2;
   --icon-box-border:rgba(0,0,0,.14);
-  --icon-glyph:#1e241e;
+  --icon-glyph:#1a1a1a;
 }
 
 *{ box-sizing:border-box; }
@@ -36,8 +39,8 @@ html{
   background-color:#f4f4f4;
   background-image: radial-gradient(
     ellipse 125% 75% at 50% -18%,
-    rgba(0,140,0,.09) 0%,
-    rgba(97,162,41,.06) 38%,
+    rgba(var(--brand-rgb), .10) 0%,
+    rgba(0,0,0,.045) 42%,
     transparent 62%
   );
   background-repeat:no-repeat;
@@ -76,6 +79,30 @@ body{
 }
 
 a{ color:inherit; text-decoration:none; }
+
+.miniInfo a,
+.contactItem a,
+.footerMail,
+.footerSite a,
+.footerFb{
+  text-decoration-line: underline;
+  text-decoration-color: var(--link-underline);
+  text-decoration-thickness: 2px;
+  text-underline-offset: .16em;
+}
+
+.miniInfo a:hover,
+.miniInfo a:focus-visible,
+.contactItem a:hover,
+.contactItem a:focus-visible,
+.footerMail:hover,
+.footerMail:focus-visible,
+.footerSite a:hover,
+.footerSite a:focus-visible,
+.footerFb:hover,
+.footerFb:focus-visible{
+  text-decoration-color: var(--link-underline-hover);
+}
 
 .svgSprite{
   position:absolute;
@@ -146,15 +173,19 @@ a.brand:focus-visible{
   width:38px;
   height:38px;
   border-radius:12px;
-  background: linear-gradient(135deg, var(--brand), var(--brand-light));
-  box-shadow: 0 8px 24px rgba(0,140,0,.22);
+  background-color:#fff;
+  background-image:url("./assets/logomark.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+  border:1px solid rgba(0,0,0,.12);
   display:flex;
   align-items:center;
   justify-content:center;
-  font-weight:800;
-  font-size:11px;
-  color:#fff;
-  letter-spacing:.3px;
+  color:transparent;
+  font-size:0;
+  overflow:hidden;
   flex-shrink:0;
 }
 
@@ -191,9 +222,9 @@ a.brand:focus-visible{
   border-radius:999px;
 }
 .navLinks a:hover{
-  border-color: rgba(0,140,0,.25);
+  border-color: rgba(var(--brand-rgb), .24);
   color:var(--brand);
-  background: rgba(0,140,0,.06);
+  background: rgba(var(--brand-rgb), .06);
 }
 
 /* Menu mobile: overlay + pannello (fino a 719px) */
@@ -413,7 +444,7 @@ body.nav-no-scroll .waFloat{
   align-items:center;
   justify-content:center;
   width:100%;
-  max-width:260px;
+  max-width:320px;
   margin:0 auto;
   padding:0 8px 0;
 }
@@ -421,7 +452,7 @@ body.nav-no-scroll .waFloat{
 .heroLogoImg{
   width:100%;
   max-width:100%;
-  max-height:120px;
+  max-height:170px;
   height:auto;
   object-fit:contain;
   object-position:center;
@@ -495,9 +526,10 @@ body.nav-no-scroll .waFloat{
   box-shadow: 0 0 0 4px var(--ring);
 }
 .btnPrimary{
-  border-color: rgba(0,140,0,.45);
-  background: linear-gradient(135deg, rgba(0,140,0,.12), rgba(78,130,33,.1));
-  color:var(--brand);
+  border-color: rgba(18,140,126,.75);
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color:#fff;
+  box-shadow:0 6px 16px rgba(18,140,126,.26);
 }
 
 .heroContact{
@@ -552,8 +584,6 @@ body.nav-no-scroll .waFloat{
 .miniInfo span{ display:block; font-size:13.5px; color:var(--muted); }
 .miniInfo a{
   color:var(--brand);
-  text-decoration:underline;
-  text-decoration-color: rgba(0,140,0,.45);
 }
 
 /* Sections */
@@ -670,12 +700,12 @@ section{
   box-shadow:0 2px 14px rgba(0,0,0,.04);
 }
 
-.serviceCard[data-tone="blue"]{ --bar:#008c00; --bar2:#61a229; }
-.serviceCard[data-tone="teal"]{ --bar:#4e8221; --bar2:#008c00; }
-.serviceCard[data-tone="violet"]{ --bar:#2d6b2d; --bar2:#61a229; }
-.serviceCard[data-tone="amber"]{ --bar:#6b8e23; --bar2:#4e8221; }
-.serviceCard[data-tone="rose"]{ --bar:#5a8f5a; --bar2:#008c00; }
-.serviceCard[data-tone="slate"]{ --bar:#5c6560; --bar2:#727272; }
+.serviceCard[data-tone="blue"]{ --bar:#007cb1; --bar2:#005b86; }
+.serviceCard[data-tone="teal"]{ --bar:#e10600; --bar2:#ff3b30; }
+.serviceCard[data-tone="violet"]{ --bar:#ff3e17; --bar2:#e10600; }
+.serviceCard[data-tone="amber"]{ --bar:#c51d1d; --bar2:#8f1111; }
+.serviceCard[data-tone="rose"]{ --bar:#b10000; --bar2:#5b0a0a; }
+.serviceCard[data-tone="slate"]{ --bar:#444444; --bar2:#151515; }
 
 .serviceCardHead{
   display:flex;
@@ -913,6 +943,16 @@ section{
   box-shadow:0 8px 28px rgba(0,0,0,.1);
 }
 
+.partnerTileLogo--dark{
+  background: rgb(68, 68, 68);
+  border-color: rgba(0,0,0,.28);
+}
+
+.partnerTileLogo--clivet{
+  background: #007cb1;
+  border-color: rgba(0,0,0,.22);
+}
+
 .partnerTileLogo img{
   display:block;
   max-height:52px;
@@ -995,16 +1035,13 @@ section{
 }
 
 .footerMail{
-  text-decoration:underline;
-  text-decoration-color: rgba(0,140,0,.45);
+  color:var(--brand);
 }
 
 .footerFb{
   display:inline-flex;
   align-items:center;
   gap:6px;
-  text-decoration:underline;
-  text-decoration-color: rgba(24,119,242,.45);
   color:var(--muted);
 }
 
@@ -1065,8 +1102,6 @@ section{
 }
 .contactItem a{
   color:var(--brand);
-  text-decoration:underline;
-  text-decoration-color: rgba(0,140,0,.45);
 }
 .contactItem span{
   display:block;
@@ -1131,8 +1166,6 @@ section{
 }
 .footerSite a{
   color:var(--brand);
-  text-decoration:underline;
-  text-decoration-color:rgba(0,140,0,.4);
 }
 
 .footerCopyright{
@@ -1178,7 +1211,7 @@ a.waFloat:focus-visible{
 @media (min-width: 720px){
   .heroPresentazione{
     display:grid;
-    grid-template-columns: minmax(120px, 220px) minmax(0, 1fr);
+    grid-template-columns: minmax(160px, 300px) minmax(0, 1fr);
     grid-template-areas:
       "logo lead"
       "cta cta"
@@ -1191,13 +1224,13 @@ a.waFloat:focus-visible{
     grid-area:logo;
     order:0;
     width:100%;
-    max-width:220px;
+    max-width:300px;
     margin:0;
     padding:6px 0 0;
     justify-self:start;
   }
   .heroLogoImg{
-    max-height:140px;
+    max-height:210px;
   }
   .heroLead{
     grid-area:lead;
