@@ -214,6 +214,10 @@ a.brand:focus-visible{
   justify-content:flex-end;
 }
 
+.navPanelMark{
+  display:none;
+}
+
 .navLinks a{
   font-size:13px;
   color:var(--muted);
@@ -392,6 +396,24 @@ body.nav-no-scroll .waFloat{
 
   .navLinks a:active{
     background:rgba(0,140,0,.08);
+  }
+
+  .navPanelMark{
+    display:block;
+    width:72px;
+    height:72px;
+    margin:2px 0 10px 16px;
+    border-radius:16px;
+    background:#fff url("./assets/logomark.png") center / contain no-repeat;
+    border:1px solid var(--border);
+    box-shadow:0 6px 18px rgba(0,0,0,.12);
+    flex:0 0 auto;
+  }
+
+  .navLinks .navBrandLink{
+    font-weight:700;
+    letter-spacing:.2px;
+    color:var(--text);
   }
 }
 
