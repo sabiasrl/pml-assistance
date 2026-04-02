@@ -682,6 +682,32 @@ section{
   }
 }
 
+.missionCard{
+  width:100%;
+  max-width:none;
+}
+
+.missionCard p{
+  margin:0 0 14px;
+  font-size:15px;
+  line-height:1.55;
+  color:var(--muted);
+}
+
+.missionCard p:last-child{
+  margin-bottom:0;
+}
+
+.missionLead{
+  font-size:16px;
+  color:var(--text);
+}
+
+.missionLead strong{
+  color:var(--text);
+  font-weight:700;
+}
+
 .phoneLines{
   display:flex;
   flex-wrap:wrap;
