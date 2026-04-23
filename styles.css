@@ -1228,6 +1228,24 @@ section{
   opacity:.9;
 }
 
+.footerMeta{
+  flex:1 1 100%;
+  margin-top:14px;
+  padding-top:12px;
+  border-top:1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+}
+
+.footerMeta .footerCopyright{
+  flex:0 1 auto;
+  margin:0;
+  padding-top:0;
+  border-top:0;
+}
+
 .footerCopyright time{
   font-weight:600;
   color:var(--text);
@@ -1303,6 +1321,12 @@ a.waFloat:focus-visible{
   .serviceGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .contactGrid{ grid-template-columns: 1fr 1fr; }
   .mapFrame{ height:360px; }
+
+  .footerMeta{
+    flex-direction:row;
+    justify-content:center;
+    gap:12px;
+  }
 }
 
 @media (min-width: 980px){
