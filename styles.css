@@ -420,6 +420,38 @@ body.nav-no-scroll .waFloat{
 /* Hero — un’unica card Presentazione: logo + testo, CTA, contatti integrati */
 .hero{
   padding:42px 0 24px;
+  position:relative;
+  width:100vw;
+  max-width:none;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+  overflow:hidden;
+  background-image:
+    linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),
+    url("./assets/reverent-gas-bolier-perspective.jpg");
+  background-size:cover;
+  background-position:center bottom;
+  background-repeat:no-repeat;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:inherit;
+  background-size:inherit;
+  background-position:inherit;
+  background-repeat:inherit;
+  filter:blur(4px);
+  transform:scale(1.01);
+  transform-origin:center;
+  z-index:0;
+  pointer-events:none;
+}
+
+.hero > *{
+  position:relative;
+  z-index:1;
 }
 
 /* Mobile: prima schermata = altezza viewport sotto la topbar (sticky) */
@@ -439,6 +471,31 @@ body.nav-no-scroll .waFloat{
     min-height:calc(100svh - var(--topbar-stack));
     min-height:calc(100dvh - var(--topbar-stack));
   }
+
+  .heroPresentazione{
+    padding-left:max(18px, env(safe-area-inset-left, 0px));
+    padding-right:max(18px, env(safe-area-inset-right, 0px));
+  }
+
+  .hero::before{
+    display:none;
+  }
+
+  .heroLogo{
+    max-width:none;
+    width:calc(100% + max(18px, env(safe-area-inset-left, 0px)) + max(18px, env(safe-area-inset-right, 0px)));
+    margin-left:calc(-1 * max(18px, env(safe-area-inset-left, 0px)));
+    margin-right:calc(-1 * max(18px, env(safe-area-inset-right, 0px)));
+    margin-top:0;
+    margin-bottom:0;
+    padding:0;
+  }
+
+  .heroLogoImg{
+    width:100%;
+    max-width:none;
+    max-height:none;
+  }
 }
 
 /* Mobile: testo → pulsanti (WhatsApp / Chiama) → logo → contatti */
@@ -452,16 +509,21 @@ body.nav-no-scroll .waFloat{
 .heroLead{
   width:100%;
   text-align:left;
-  order:1;
+  order:2;
+  padding:0;
+  border-radius:0;
+  background:transparent;
+  border:0;
+  backdrop-filter:none;
 }
 
 .heroPresentazione .ctaRow{
-  order:2;
+  order:3;
 }
 
 .heroLogo{
   flex-shrink:0;
-  order:3;
+  order:1;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -482,12 +544,10 @@ body.nav-no-scroll .waFloat{
   filter: drop-shadow(0 10px 24px rgba(0,0,0,.22));
 }
 
-.heroCard{
-  background: var(--card);
-  border:1px solid var(--border);
-  border-radius:20px;
+.heroPresentazione{
   padding:24px;
-  box-shadow:0 4px 24px rgba(0,0,0,.06);
+  max-width:1100px;
+  margin:0 auto;
 }
 
 .kicker{
@@ -513,10 +573,11 @@ body.nav-no-scroll .waFloat{
   line-height:1.15;
   letter-spacing:-.3px;
   overflow-wrap:break-word;
+  color:#fff;
 }
 .hero p{
   margin:0;
-  color:var(--muted);
+  color:rgba(255,255,255,.94);
   font-size:15px;
   overflow-wrap:break-word;
 }
@@ -605,7 +666,27 @@ body.nav-no-scroll .waFloat{
 .miniInfo strong{ display:block; font-size:14px; margin-bottom:2px; }
 .miniInfo span{ display:block; font-size:13.5px; color:var(--muted); }
 .miniInfo a{
-  color:var(--brand);
+  color:#b10000;
+}
+
+.hero .kicker{
+  color:#fff;
+}
+
+.hero .miniInfo span,
+.hero .miniInfo a{
+  color:#171717;
+}
+
+.hero .miniInfo{
+  background:#fff;
+  border-color:rgba(0,0,0,.16);
+}
+
+.hero .btn:not(.btnPrimary){
+  background:#fff;
+  border-color:rgba(0,0,0,.18);
+  color:#151515;
 }
 
 /* Sections */
@@ -1315,7 +1396,7 @@ a.waFloat:focus-visible{
     padding-top:26px;
   }
   .hero h1{ font-size:40px; }
-  .heroCard{ padding:28px; }
+  .heroPresentazione{ padding:28px; }
   .visualGrid{ grid-template-columns: repeat(3, minmax(0,1fr)); }
   .visualCard img{ height:210px; }
   .serviceGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
