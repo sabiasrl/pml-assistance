@@ -471,31 +471,6 @@ body.nav-no-scroll .waFloat{
     min-height:calc(100svh - var(--topbar-stack));
     min-height:calc(100dvh - var(--topbar-stack));
   }
-
-  .heroPresentazione{
-    padding-left:max(18px, env(safe-area-inset-left, 0px));
-    padding-right:max(18px, env(safe-area-inset-right, 0px));
-  }
-
-  .hero::before{
-    display:none;
-  }
-
-  .heroLogo{
-    max-width:none;
-    width:calc(100% + max(18px, env(safe-area-inset-left, 0px)) + max(18px, env(safe-area-inset-right, 0px)));
-    margin-left:calc(-1 * max(18px, env(safe-area-inset-left, 0px)));
-    margin-right:calc(-1 * max(18px, env(safe-area-inset-right, 0px)));
-    margin-top:0;
-    margin-bottom:0;
-    padding:0;
-  }
-
-  .heroLogoImg{
-    width:100%;
-    max-width:none;
-    max-height:none;
-  }
 }
 
 /* Mobile: testo → pulsanti (WhatsApp / Chiama) → logo → contatti */
@@ -548,6 +523,25 @@ body.nav-no-scroll .waFloat{
   padding:24px;
   max-width:1100px;
   margin:0 auto;
+}
+
+@media (max-width: 719px){
+  .heroPresentazione{
+    padding-left:max(18px, env(safe-area-inset-left, 0px));
+    padding-right:max(18px, env(safe-area-inset-right, 0px));
+  }
+
+  .heroLogo{
+    max-width:none;
+    width:100%;
+    margin:0;
+    padding:0 8px;
+  }
+
+  .heroLogoImg{
+    max-width:none;
+    max-height:none;
+  }
 }
 
 .kicker{
