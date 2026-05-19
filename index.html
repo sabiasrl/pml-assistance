@@ -171,7 +171,7 @@
               "item": {
                 "@type": "Service",
                 "name": "Assistenza tecnica",
-                "description": "Manutenzione ordinaria e straordinaria, supporto tecnico specializzato, interventi rapidi su richiesta.",
+                "description": "Manutenzione ordinaria e straordinaria, interventi rapidi e ricambi per caldaie a gas e biomasse. Centro assistenza autorizzato.",
                 "provider": { "@id": "https://www.plmassistance.it/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Provincia di Potenza" }
               }
@@ -181,8 +181,8 @@
               "position": 2,
               "item": {
                 "@type": "Service",
-                "name": "Impianti e installazioni",
-                "description": "Installazione impianti elettrici, sistemi fotovoltaici ed energie rinnovabili, adeguamenti normativi.",
+                "name": "Caldaie gas e biomassa",
+                "description": "Installazione, revisione e assistenza su caldaie a gas, generatori a biomassa e pompe di calore.",
                 "provider": { "@id": "https://www.plmassistance.it/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Provincia di Potenza" }
               }
@@ -192,8 +192,8 @@
               "position": 3,
               "item": {
                 "@type": "Service",
-                "name": "Supporto operativo",
-                "description": "Gestione attività in loco, coordinamento lavori, supervisione tecnica.",
+                "name": "Impianti solari",
+                "description": "Installazione di piccoli impianti fotovoltaici, impianti su tetto, autoconsumo e soluzioni per privati e aziende.",
                 "provider": { "@id": "https://www.plmassistance.it/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Provincia di Potenza" }
               }
@@ -203,8 +203,8 @@
               "position": 4,
               "item": {
                 "@type": "Service",
-                "name": "Consulenza tecnica",
-                "description": "Analisi tecnica e progettuale, ottimizzazione processi, sicurezza e conformità.",
+                "name": "Condizionamento",
+                "description": "Climatizzazione residenziale e commerciale, manutenzione e regolazione degli impianti.",
                 "provider": { "@id": "https://www.plmassistance.it/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Provincia di Potenza" }
               }
@@ -214,8 +214,8 @@
               "position": 5,
               "item": {
                 "@type": "Service",
-                "name": "Servizi personalizzati",
-                "description": "Soluzioni su misura per aziende, contratti di assistenza continuativa, interventi programmati.",
+                "name": "Impianti idraulici e consulenza",
+                "description": "Installazioni idrauliche e sanitari, adeguamenti normativi, analisi tecnica e contratti luce e gas.",
                 "provider": { "@id": "https://www.plmassistance.it/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Provincia di Potenza" }
               }
@@ -358,23 +358,37 @@
       <div class="container">
         <section class="hero" aria-label="Presentazione">
           <div class="heroPresentazione">
-            <div class="heroLead">
-              <div class="kicker">
-                <span class="heroLead-text heroLead-text--desktop">
-                  Installazione, manutenzione e riparazione: idraulici, riscaldamento e condizionamento — privati e aziende
-                </span>
-                <span class="heroLead-text heroLead-text--mobile">
-                  Impianti idraulici, riscaldamento e climatizzazione — privati e aziende
-                </span>
+            <div class="heroIntro">
+              <figure class="heroLogo">
+                <img
+                  src="./assets/logo.jpeg"
+                  alt="PLM Assistance di Michele Pietrafesa"
+                  width="1686"
+                  height="1920"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                />
+              </figure>
+              <div class="heroLead">
+                <h1 class="hero-headline">
+                  <span class="hero-headline__lead">
+                    <img
+                      class="heroLogoMobile"
+                      src="./assets/logo-plm.png"
+                      alt="PLM Assistance"
+                      width="1461"
+                      height="524"
+                      loading="eager"
+                      decoding="async"
+                    />
+                    <span class="hero-headline__line">Assistenza tecnica</span>
+                  </span>
+                  <span class="hero-headline__line">Caldaie gas e biomassa</span>
+                  <span class="hero-headline__line">Impianti solari</span>
+                  <span class="hero-headline__line">Condizionamento</span>
+                </h1>
               </div>
-              <h1>
-                <span class="heroLead-text heroLead-text--desktop">Impianti idraulici, riscaldamento e climatizzazione: installazione e assistenza</span>
-                <span class="heroLead-text heroLead-text--mobile">Installazione e assistenza impianti</span>
-              </h1>
-              <p>
-                <span class="heroLead-text heroLead-text--desktop">PLM Assistance di Michele Pietrafesa opera su edifici civili e commerciali con interventi rapidi e assistenza tecnica qualificata.</span>
-                <span class="heroLead-text heroLead-text--mobile">Interventi rapidi su edifici civili e commerciali.</span>
-              </p>
             </div>
 
             <div class="ctaRow" role="group" aria-label="Azioni rapide">
@@ -394,7 +408,7 @@
                 </div>
                 <div>
                   <strong>Indirizzo</strong>
-                  <span>Via Spagna, 7 (Zona Ind. Piano San Nicola) - 85016 Pietragalla (PZ)</span>
+                  <span>Via Spagna, 7 (Zona Ind. Piano San Nicola)<br>85016 Pietragalla (PZ)</span>
                 </div>
               </div>
               <div class="miniInfo">
@@ -427,7 +441,8 @@
           <div class="heroPartnerBanner" aria-label="Marchi centro assistenza autorizzato">
             <div class="heroPartnerBanner-inner">
               <p class="heroPartnerBanner-heading">
-                <a href="#partner">Centro assistenza autorizzato</a>
+                <a href="#partner" class="heroPartnerBanner-headingLink heroPartnerBanner-headingLink--desktop">Centro assistenza autorizzato</a>
+                <span class="heroPartnerBanner-headingLabel heroPartnerBanner-headingLink--mobile">Centro assistenza autorizzato</span>
               </p>
               <div class="heroPartnerBanner-track">
                 <a class="heroPartnerBanner-item" href="https://carincigroup.it/" target="_blank" rel="noopener noreferrer" title="Carinci Group">
@@ -598,131 +613,178 @@
         <section id="servizi" aria-label="I nostri servizi">
           <div class="sectionTitle">
             <h2>I nostri servizi</h2>
-            <p>Una gamma completa, con interventi personalizzati.</p>
+            <p>Assistenza, impianti e installazioni: ogni area con esempi reali dei nostri interventi.</p>
           </div>
 
-          <div class="serviceGrid">
-            <article class="serviceCard" data-tone="blue">
-              <div class="serviceCardHead">
-                <span class="serviceIcon" aria-hidden="true">⚙️</span>
-                <div class="serviceCardTitles">
-                  <h3>Assistenza tecnica</h3>
-                  <span class="servicePill">Interventi &amp; supporto</span>
+          <div class="serviceShowcase">
+            <div class="serviceBlock" id="assistenza-tecnica">
+              <article class="serviceCard" data-tone="blue">
+                <div class="serviceCardHead">
+                  <span class="serviceIcon" aria-hidden="true">⚙️</span>
+                  <div class="serviceCardTitles">
+                    <h3>Assistenza tecnica</h3>
+                    <span class="servicePill">Interventi &amp; ricambi</span>
+                  </div>
                 </div>
+                <ul class="serviceList">
+                  <li>Manutenzione ordinaria e straordinaria</li>
+                  <li>Interventi rapidi su caldaie e impianti</li>
+                  <li>Ricambi per caldaie a gas e biomasse</li>
+                  <li>Centro assistenza autorizzato marchi partner</li>
+                </ul>
+              </article>
+              <div class="serviceVisuals" aria-label="Assistenza tecnica — immagini">
+                <article class="visualCard">
+                  <img src="./assets/worker.jpg" alt="Tecnico PLM Assistance su impianto termico" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Tecnici qualificati in assistenza</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/reverent-gas-bolier-perspective.jpg" alt="Caldaia a gas in assistenza" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Assistenza su caldaie a gas</div>
+                </article>
               </div>
-              <ul class="serviceList">
-                <li>Manutenzione ordinaria e straordinaria</li>
-                <li>Supporto tecnico specializzato</li>
-                <li>Interventi rapidi su richiesta</li>
-              </ul>
-            </article>
+            </div>
 
-            <article class="serviceCard" data-tone="teal">
-              <div class="serviceCardHead">
-                <span class="serviceIcon" aria-hidden="true">
-                  <svg class="serviceIconSvg" width="26" height="26" focusable="false"><use href="#icon-pipe-install"/></svg>
-                </span>
-                <div class="serviceCardTitles">
-                  <h3>Impianti e installazioni</h3>
-                  <span class="servicePill">Tecnologia &amp; conformità</span>
+            <div class="serviceBlock" id="caldaie-gas-biomassa">
+              <article class="serviceCard" data-tone="amber">
+                <div class="serviceCardHead">
+                  <span class="serviceIcon" aria-hidden="true">🔥</span>
+                  <div class="serviceCardTitles">
+                    <h3>Caldaie gas e biomassa</h3>
+                    <span class="servicePill">Riscaldamento &amp; ACS</span>
+                  </div>
                 </div>
+                <ul class="serviceList">
+                  <li>Installazione e revisione caldaie a gas</li>
+                  <li>Stufe e generatori a biomassa</li>
+                  <li>Pompe di calore e sistemi ibridi</li>
+                  <li>Produzione acqua calda sanitaria</li>
+                </ul>
+              </article>
+              <div class="serviceVisuals" aria-label="Caldaie gas e biomassa — immagini">
+                <article class="visualCard">
+                  <img src="./assets/reverent-heating-gas-bolier.jpg" alt="Caldaia a gas per riscaldamento e ACS" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Impianti termici e produzione ACS</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/fire.jpg" alt="Stufa a biomassa in funzione" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Riscaldamento a biomassa</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/heat-pump-fan.jpg" alt="Unità esterna pompa di calore" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Pompe di calore e sistemi ibridi</div>
+                </article>
               </div>
-              <ul class="serviceList">
-                <li>Installazione di piccoli impianti solari</li>
-                <li>Sistemi fotovoltaici ed energie rinnovabili</li>
-                <li>Adeguamenti normativi</li>
-              </ul>
-            </article>
+            </div>
 
-            <article class="serviceCard" data-tone="violet">
-              <div class="serviceCardHead">
-                <span class="serviceIcon" aria-hidden="true">
-                  <svg class="serviceIconSvg" width="26" height="26" focusable="false"><use href="#icon-pipe-wrench"/></svg>
-                </span>
-                <div class="serviceCardTitles">
-                  <h3>Supporto operativo</h3>
-                  <span class="servicePill">In loco</span>
+            <div class="serviceBlock" id="impianti-solari">
+              <article class="serviceCard" data-tone="teal">
+                <div class="serviceCardHead">
+                  <span class="serviceIcon" aria-hidden="true">☀️</span>
+                  <div class="serviceCardTitles">
+                    <h3>Impianti solari</h3>
+                    <span class="servicePill">Fotovoltaico &amp; rinnovabili</span>
+                  </div>
                 </div>
+                <ul class="serviceList">
+                  <li>Installazione piccoli impianti fotovoltaici</li>
+                  <li>Impianti su tetto e autoconsumo</li>
+                  <li>Soluzioni per privati, condomini e aziende</li>
+                  <li>Progettazione e posa moduli</li>
+                </ul>
+              </article>
+              <div class="serviceVisuals serviceVisuals--wide" aria-label="Impianti solari — immagini">
+                <article class="visualCard">
+                  <img src="./assets/solar-panel-roof.jpg" alt="Pannelli fotovoltaici su tetto" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Fotovoltaico su copertura</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/solar-panel-roof-2.jpg" alt="Impianto solare residenziale su tetto" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Impianti residenziali</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/soalr-panel-roof-big.jpg" alt="Ampia installazione solare su tetto" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Installazioni su larga scala</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/solar-panel-blue-sky.jpg" alt="Pannelli solari con cielo sereno" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Energia solare e autoconsumo</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/solar-panel-field.jpg" alt="Campo fotovoltaico" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Impianti di media e grande taglia</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/solar-panel-industry.jpg" alt="Fotovoltaico su copertura industriale" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Fotovoltaico per aziende</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/solar-panel-1.jpg" alt="Moduli fotovoltaici in posa" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Posa moduli e componenti</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/solar-panel-horizontal.jpg" alt="Panoramica impianto fotovoltaico" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Progettazione e posa fotovoltaico</div>
+                </article>
               </div>
-              <ul class="serviceList">
-                <li>Gestione attività in loco</li>
-                <li>Coordinamento lavori</li>
-                <li>Supervisione tecnica</li>
-              </ul>
-            </article>
+            </div>
 
-            <article class="serviceCard" data-tone="rose">
-              <div class="serviceCardHead">
-                <span class="serviceIcon" aria-hidden="true">📋</span>
-                <div class="serviceCardTitles">
-                  <h3>Consulenza</h3>
-                  <span class="servicePill">Progettazione &amp; miglioramento</span>
+            <div class="serviceBlock" id="condizionamento">
+              <article class="serviceCard" data-tone="violet">
+                <div class="serviceCardHead">
+                  <span class="serviceIcon" aria-hidden="true">❄️</span>
+                  <div class="serviceCardTitles">
+                    <h3>Condizionamento</h3>
+                    <span class="servicePill">Clima &amp; comfort</span>
+                  </div>
                 </div>
+                <ul class="serviceList">
+                  <li>Climatizzazione residenziale e commerciale</li>
+                  <li>Installazione unità split e centralizzate</li>
+                  <li>Manutenzione e regolazione impianti</li>
+                </ul>
+              </article>
+              <div class="serviceVisuals" aria-label="Condizionamento — immagini">
+                <article class="visualCard">
+                  <img src="./assets/home-hvac.jpg" alt="Impianto di climatizzazione in ambiente residenziale" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Climatizzazione residenziale</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/air-conditioner.jpg" alt="Unità di condizionamento dell'aria" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Comfort e regolazione del clima</div>
+                </article>
               </div>
-              <ul class="serviceList">
-                <li>Analisi tecnica e progettuale</li>
-                <li>Ottimizzazione processi</li>
-                <li>Sicurezza e conformità</li>
-                <li>Contratti luce e gas</li>
-              </ul>
-            </article>
+            </div>
 
-            <article class="serviceCard" data-tone="slate">
-              <div class="serviceCardHead">
-                <span class="serviceIcon" aria-hidden="true">🧰</span>
-                <div class="serviceCardTitles">
-                  <h3>Servizi personalizzati</h3>
-                  <span class="servicePill">Soluzioni su misura</span>
+            <div class="serviceBlock" id="impianti-idraulici">
+              <article class="serviceCard" data-tone="rose">
+                <div class="serviceCardHead">
+                  <span class="serviceIcon" aria-hidden="true">
+                    <svg class="serviceIconSvg" width="26" height="26" focusable="false"><use href="#icon-pipe-install"/></svg>
+                  </span>
+                  <div class="serviceCardTitles">
+                    <h3>Impianti idraulici e consulenza</h3>
+                    <span class="servicePill">Installazioni &amp; normativa</span>
+                  </div>
                 </div>
+                <ul class="serviceList">
+                  <li>Installazioni idrauliche e sanitari</li>
+                  <li>Adeguamenti normativi e sicurezza</li>
+                  <li>Analisi tecnica e ottimizzazione impianti</li>
+                  <li>Contratti luce e gas</li>
+                </ul>
+              </article>
+              <div class="serviceVisuals" aria-label="Impianti idraulici — immagini">
+                <article class="visualCard">
+                  <img src="./assets/pipes.jpg" alt="Rete idraulica e tubazioni" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Reti idrauliche e tubazioni</div>
+                </article>
+                <article class="visualCard">
+                  <img src="./assets/bathroom-detail.jpg" alt="Bagno con impianti idraulici" loading="lazy" decoding="async" />
+                  <div class="visualCaption">Sanitari e finiture bagno</div>
+                </article>
               </div>
-              <ul class="serviceList">
-                <li>Soluzioni su misura per aziende e privati</li>
-                <li>Contratti di assistenza continuativa</li>
-                <li>Interventi programmati</li>
-                <li>Ricambi caldaie a gas e biomasse</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section id="gallery" aria-label="Immagini principali">
-          <div class="visualGrid">
-            <article class="visualCard">
-              <img src="./assets/home-hvac.jpg" alt="Impianto di climatizzazione in ambiente residenziale" loading="lazy" decoding="async" />
-              <div class="visualCaption">Soluzioni residenziali riscaldamento e climatizzazione</div>
-            </article>
-            <article class="visualCard">
-              <img src="./assets/reverent-heating-gas-bolier.jpg" alt="Impianto di riscaldamento con caldaia a gas" loading="lazy" decoding="async" />
-              <div class="visualCaption">Impianti termici e produzione acqua calda</div>
-            </article>
-            <article class="visualCard">
-              <img src="./assets/pipes.jpg" alt="Dettaglio impianti idraulici" loading="lazy" decoding="async" />
-              <div class="visualCaption">Installazioni e manutenzione impianti</div>
-            </article>
-            <article class="visualCard">
-              <img src="./assets/heat-pump-fan.jpg" alt="Ventola unità esterna pompa di calore" loading="lazy" decoding="async" />
-              <div class="visualCaption">Pompe di calore e sistemi termici</div>
-            </article>
-            <article class="visualCard">
-              <img src="./assets/worker.jpg" alt="Tecnico al lavoro su impianti" loading="lazy" decoding="async" />
-              <div class="visualCaption">Assistenza tecnica specializzata</div>
-            </article>
-            <article class="visualCard">
-              <img src="./assets/fire.jpg" alt="Stufa a biomassa con fiamma visibile" loading="lazy" decoding="async" />
-              <div class="visualCaption">Riscaldamento a biomassa e combustione</div>
-            </article>
-            <article class="visualCard">
-              <img src="./assets/bathroom-detail.jpg" alt="Dettaglio bagno con impianti idraulici" loading="lazy" decoding="async" />
-              <div class="visualCaption">Impianti idraulici e finiture</div>
-            </article>
-            <article class="visualCard">
-              <img src="./assets/air-conditioner.jpg" alt="Unità di condizionamento aria" loading="lazy" decoding="async" />
-              <div class="visualCaption">Climatizzazione e comfort ambientale</div>
-            </article>
-            <article class="visualCard">
-              <img src="./assets/reverent-gas-bolier-perspective.jpg" alt="Caldaia a gas vista in prospettiva" loading="lazy" decoding="async" />
-              <div class="visualCaption">Caldaie a gas: installazione e assistenza</div>
-            </article>
+            </div>
           </div>
         </section>
 
@@ -794,7 +856,7 @@
                 </div>
                 <div>
                   <strong>Sede</strong>
-                  <span>Via Spagna, 7 (Zona Ind. Piano San Nicola) - 85016 Pietragalla (PZ)</span>
+                  <span>Via Spagna, 7 (Zona Ind. Piano San Nicola)<br>85016 Pietragalla (PZ)</span>
                 </div>
               </div>
             </div>
@@ -821,7 +883,7 @@
         <section id="mappa" aria-label="Mappa">
           <div class="sectionTitle">
             <h2>Dove siamo</h2>
-            <p>Via Spagna, 7 (Zona Ind. Piano San Nicola) - 85016 Pietragalla (PZ)</p>
+            <p>Via Spagna, 7 (Zona Ind. Piano San Nicola)<br>85016 Pietragalla (PZ)</p>
           </div>
 
           <div class="mapFrameWrap">
