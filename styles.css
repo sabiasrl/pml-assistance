@@ -194,8 +194,7 @@ a.brand:focus-visible{
   background-repeat:no-repeat;
   background-position:center;
   background-size:contain;
-  box-shadow:var(--shadow-sm), 0 4px 14px rgba(15,15,15,.08);
-  border:1px solid rgba(15,15,15,.08);
+  border:0;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -263,9 +262,9 @@ a.brand:focus-visible{
   min-height:48px;
   margin:0;
   padding:0;
-  border:1px solid var(--border);
+  border:0;
   border-radius:14px;
-  background:var(--fill-soft);
+  background:transparent;
   color:var(--text);
   cursor:pointer;
   -webkit-appearance:none;
